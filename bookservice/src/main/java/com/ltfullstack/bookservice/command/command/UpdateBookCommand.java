@@ -3,18 +3,17 @@ package com.ltfullstack.bookservice.command.command;
 
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
-
-public class CreateBookCommand {
+public class UpdateBookCommand {
     @TargetAggregateIdentifier
     private String id;
     private String name;
     private String author;
     private  Boolean isReady;
 
-    public CreateBookCommand() {
+    public UpdateBookCommand() {
     }
 
-    public CreateBookCommand(String id, String name, String author, Boolean isReady) {
+    public UpdateBookCommand(String id, String name, String author, Boolean isReady) {
         this.id = id;
         this.name = name;
         this.author = author;
