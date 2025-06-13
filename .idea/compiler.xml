@@ -2,16 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="apigateway" />
         <module name="commonservice" />
-        <module name="userservice" />
         <module name="discoveryserver" />
+        <module name="userservice" />
       </profile>
-      <profile name="Annotation profile for notificationservice" enabled="true">
+      <profile name="Annotation profile for borrowingservice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -20,8 +21,8 @@
         </processorPath>
         <module name="borrowingservice" />
         <module name="employeeservice" />
-        <module name="notificationservice" />
         <module name="bookservice" />
+        <module name="notificationservice" />
       </profile>
     </annotationProcessing>
   </component>
